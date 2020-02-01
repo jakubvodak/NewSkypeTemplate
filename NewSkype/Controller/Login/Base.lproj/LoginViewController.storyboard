@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTs-fa-FXS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tF7-vY-FlR">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="eTs-fa-FXS" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oMg-Pm-xyx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TK2-aO-eOF" kind="relationship" relationship="rootViewController" id="ojl-IJ-i4g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biF-xn-HA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="76"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="baE-Gu-LXi">
+            <objects>
+                <viewController id="TK2-aO-eOF" customClass="LoginViewController" customModule="NewSkype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qr2-bL-EeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Skype" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1an-eV-gQS" userLabel="lblTitle">
+                                <rect key="frame" x="134" y="94" width="146.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aj-xb-Pij" userLabel="txtInput">
+                                <rect key="frame" x="20" y="168" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NJO-wp-PQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkr-oi-Q5e" userLabel="btnLogin">
+                                <rect key="frame" x="167" y="296" width="80" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="p6o-xf-4vA"/>
+                                    <constraint firstAttribute="height" constant="44" id="pfw-rL-WrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="QiJ-X0-wja" kind="show" identifier="ChatViewController" id="mFp-hM-rkJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGK-Td-yrV" userLabel="btnPrivacy">
+                                <rect key="frame" x="159.5" y="782" width="95" height="30"/>
+                                <state key="normal" title="Privacy Policy"/>
+                                <connections>
+                                    <segue destination="uVa-q2-PXl" kind="show" id="ztd-tO-wRV"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="324-uh-qms" userLabel="segControl">
+                                <rect key="frame" x="20" y="232" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xxw-8L-0GL"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                    <segment title="Other"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="CxA-cL-g0g" firstAttribute="bottom" secondItem="NGK-Td-yrV" secondAttribute="bottom" constant="50" id="5uC-B4-97d"/>
+                            <constraint firstItem="324-uh-qms" firstAttribute="leading" secondItem="CxA-cL-g0g" secondAttribute="leading" constant="20" id="81g-tT-x6Z"/>
+                            <constraint firstItem="CxA-cL-g0g" firstAttribute="trailing" secondItem="324-uh-qms" secondAttribute="trailing" constant="20" id="H6x-Dp-ssl"/>
+                            <constraint firstItem="1an-eV-gQS" firstAttribute="top" secondItem="CxA-cL-g0g" secondAttribute="top" constant="50" id="PA6-KD-lW1"/>
+                            <constraint firstItem="1aj-xb-Pij" firstAttribute="top" secondItem="1an-eV-gQS" secondAttribute="bottom" constant="38" id="Uue-av-FFG"/>
+                            <constraint firstItem="NGK-Td-yrV" firstAttribute="centerX" secondItem="CxA-cL-g0g" secondAttribute="centerX" id="avL-nj-JaB"/>
+                            <constraint firstItem="Dkr-oi-Q5e" firstAttribute="top" secondItem="324-uh-qms" secondAttribute="bottom" constant="20" id="bm2-Oa-6B1"/>
+                            <constraint firstItem="1an-eV-gQS" firstAttribute="centerX" secondItem="CxA-cL-g0g" secondAttribute="centerX" id="eaj-ja-y1Y"/>
+                            <constraint firstItem="324-uh-qms" firstAttribute="top" secondItem="1aj-xb-Pij" secondAttribute="bottom" constant="20" id="hOw-Uu-dQD"/>
+                            <constraint firstItem="CxA-cL-g0g" firstAttribute="trailing" secondItem="1aj-xb-Pij" secondAttribute="trailing" constant="20" id="hxa-ZF-8iU"/>
+                            <constraint firstItem="1aj-xb-Pij" firstAttribute="leading" secondItem="CxA-cL-g0g" secondAttribute="leading" constant="20" id="jld-xc-Txe"/>
+                            <constraint firstItem="Dkr-oi-Q5e" firstAttribute="centerX" secondItem="CxA-cL-g0g" secondAttribute="centerX" id="sjU-gm-78u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CxA-cL-g0g"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Uj7-ki-eZN" appends="YES" id="X1H-S9-kHf"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vh6-Ge-8Kr"/>
+                    <connections>
+                        <outlet property="segControl" destination="324-uh-qms" id="Kda-Ri-WOS"/>
+                        <outlet property="txtInput" destination="1aj-xb-Pij" id="4qg-b6-bI9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMo-fQ-mp5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Uj7-ki-eZN">
+                    <connections>
+                        <action selector="hideKeyboard" destination="TK2-aO-eOF" id="omZ-QB-Qet"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="191" y="77"/>
+        </scene>
+        <!--ChatViewController-->
+        <scene sceneID="kDm-PV-0rt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChatViewController" id="QiJ-X0-wja" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="M2s-DM-FdA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvZ-56-GCt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="58"/>
+        </scene>
+        <!--PrivacyViewController-->
+        <scene sceneID="MIx-xZ-59x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PrivacyViewController" id="uVa-q2-PXl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xHa-Te-2b5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rga-hX-cz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="93"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB0905DB23CC9C58006AE4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905DA23CC9C58006AE4C7 /* AppDelegate.swift */; };
+		CB0905DD23CC9C58006AE4C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905DC23CC9C58006AE4C7 /* SceneDelegate.swift */; };
+		CB0905E223CC9C58006AE4C7 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0905E023CC9C58006AE4C7 /* LoginViewController.storyboard */; };
+		CB0905E423CC9C5A006AE4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0905E323CC9C5A006AE4C7 /* Assets.xcassets */; };
+		CB0905E723CC9C5A006AE4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0905E523CC9C5A006AE4C7 /* LaunchScreen.storyboard */; };
+		CB0905F223CCA830006AE4C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905F123CCA830006AE4C7 /* LoginViewController.swift */; };
+		CB0905F623CCB3D4006AE4C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905F523CCB3D4006AE4C7 /* User.swift */; };
+		CB0905F823CCB4C1006AE4C7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905F723CCB4C1006AE4C7 /* ChatViewController.swift */; };
+		CB0905FA23CDB916006AE4C7 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905F923CDB916006AE4C7 /* MessageTableViewCell.swift */; };
+		CB0905FC23CDBDFF006AE4C7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0905FB23CDBDFF006AE4C7 /* Message.swift */; };
+		CB59D82023CF02E100A8AB87 /* ChatDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D81F23CF02E100A8AB87 /* ChatDataController.swift */; };
+		CB59D82523CF0DCF00A8AB87 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D82423CF0DCF00A8AB87 /* SharedViewController.swift */; };
+		CB59D82823CF14F300A8AB87 /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB59D82723CF14F300A8AB87 /* ChatViewController.storyboard */; };
+		CB59D82B23CF1C2E00A8AB87 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D82A23CF1C2E00A8AB87 /* PrivacyViewController.swift */; };
+		CB59D82D23CF1C3D00A8AB87 /* PrivacyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB59D82C23CF1C3D00A8AB87 /* PrivacyViewController.storyboard */; };
+		CB59D83023CF254700A8AB87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D82F23CF254700A8AB87 /* Constants.swift */; };
+		CB91DAF923E6096D002E6553 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB91DAF823E6096D002E6553 /* AuthenticationServices.framework */; };
+		CB91DAFB23E611A3002E6553 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB91DAFA23E611A3002E6553 /* GoogleService-Info.plist */; };
+		E441E69C7669B8136C9FA040 /* libPods-NewSkype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FEBE6E78A755FD09EFEA1E /* libPods-NewSkype.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB59D83C23CF3CE300A8AB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0905CF23CC9C58006AE4C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0905D623CC9C58006AE4C7;
+			remoteInfo = NewSkype;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B3787FE9D52E3C72E2E3779 /* Pods-NewSkype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewSkype.release.xcconfig"; path = "Target Support Files/Pods-NewSkype/Pods-NewSkype.release.xcconfig"; sourceTree = "<group>"; };
+		1581C1C83FAD027BA797BCB3 /* Pods-NewSkype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewSkype.debug.xcconfig"; path = "Target Support Files/Pods-NewSkype/Pods-NewSkype.debug.xcconfig"; sourceTree = "<group>"; };
+		36FEBE6E78A755FD09EFEA1E /* libPods-NewSkype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewSkype.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0905D723CC9C58006AE4C7 /* NewSkype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewSkype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0905DA23CC9C58006AE4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB0905DC23CC9C58006AE4C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB0905E123CC9C58006AE4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		CB0905E323CC9C5A006AE4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB0905E623CC9C5A006AE4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB0905E823CC9C5A006AE4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0905F123CCA830006AE4C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB0905F523CCB3D4006AE4C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB0905F723CCB4C1006AE4C7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CB0905F923CDB916006AE4C7 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		CB0905FB23CDBDFF006AE4C7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CB59D81F23CF02E100A8AB87 /* ChatDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataController.swift; sourceTree = "<group>"; };
+		CB59D82423CF0DCF00A8AB87 /* SharedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		CB59D82723CF14F300A8AB87 /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatViewController.storyboard; sourceTree = "<group>"; };
+		CB59D82A23CF1C2E00A8AB87 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		CB59D82C23CF1C3D00A8AB87 /* PrivacyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivacyViewController.storyboard; sourceTree = "<group>"; };
+		CB59D82F23CF254700A8AB87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB59D83723CF3CE300A8AB87 /* NewSkypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewSkypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB91DAF723E6096D002E6553 /* NewSkype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewSkype.entitlements; sourceTree = "<group>"; };
+		CB91DAF823E6096D002E6553 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		CB91DAFA23E611A3002E6553 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB0905D423CC9C58006AE4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB91DAF923E6096D002E6553 /* AuthenticationServices.framework in Frameworks */,
+				E441E69C7669B8136C9FA040 /* libPods-NewSkype.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB59D83423CF3CE300A8AB87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81DF237D2A51F5653AC0A3C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB91DAF823E6096D002E6553 /* AuthenticationServices.framework */,
+				36FEBE6E78A755FD09EFEA1E /* libPods-NewSkype.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA007C928BAC968F557A4B0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1581C1C83FAD027BA797BCB3 /* Pods-NewSkype.debug.xcconfig */,
+				0B3787FE9D52E3C72E2E3779 /* Pods-NewSkype.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB0905CE23CC9C58006AE4C7 = {
+			isa = PBXGroup;
+			children = (
+				CB0905D923CC9C58006AE4C7 /* NewSkype */,
+				CB0905D823CC9C58006AE4C7 /* Products */,
+				AA007C928BAC968F557A4B0B /* Pods */,
+				81DF237D2A51F5653AC0A3C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB0905D823CC9C58006AE4C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB0905D723CC9C58006AE4C7 /* NewSkype.app */,
+				CB59D83723CF3CE300A8AB87 /* NewSkypeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB0905D923CC9C58006AE4C7 /* NewSkype */ = {
+			isa = PBXGroup;
+			children = (
+				CB91DAF723E6096D002E6553 /* NewSkype.entitlements */,
+				CB0905F023CCA5D9006AE4C7 /* Controller */,
+				CB0905EF23CCA5D5006AE4C7 /* View */,
+				CB0905EE23CCA5CC006AE4C7 /* Model */,
+				CB0905DA23CC9C58006AE4C7 /* AppDelegate.swift */,
+				CB0905DC23CC9C58006AE4C7 /* SceneDelegate.swift */,
+				CB0905E323CC9C5A006AE4C7 /* Assets.xcassets */,
+				CB0905E523CC9C5A006AE4C7 /* LaunchScreen.storyboard */,
+				CB0905E823CC9C5A006AE4C7 /* Info.plist */,
+				CB91DAFA23E611A3002E6553 /* GoogleService-Info.plist */,
+				CB59D82F23CF254700A8AB87 /* Constants.swift */,
+			);
+			path = NewSkype;
+			sourceTree = "<group>";
+		};
+		CB0905EE23CCA5CC006AE4C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB0905F523CCB3D4006AE4C7 /* User.swift */,
+				CB0905FB23CDBDFF006AE4C7 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB0905EF23CCA5D5006AE4C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB0905F923CDB916006AE4C7 /* MessageTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB0905F023CCA5D9006AE4C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB59D82923CF1C1C00A8AB87 /* Privacy */,
+				CB59D82323CF0DB900A8AB87 /* Shared */,
+				CB59D82123CF090A00A8AB87 /* Login */,
+				CB59D82223CF091000A8AB87 /* Chat */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB59D82123CF090A00A8AB87 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CB0905E023CC9C58006AE4C7 /* LoginViewController.storyboard */,
+				CB0905F123CCA830006AE4C7 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CB59D82223CF091000A8AB87 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CB59D82723CF14F300A8AB87 /* ChatViewController.storyboard */,
+				CB0905F723CCB4C1006AE4C7 /* ChatViewController.swift */,
+				CB59D81F23CF02E100A8AB87 /* ChatDataController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CB59D82323CF0DB900A8AB87 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CB59D82423CF0DCF00A8AB87 /* SharedViewController.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CB59D82923CF1C1C00A8AB87 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				CB59D82C23CF1C3D00A8AB87 /* PrivacyViewController.storyboard */,
+				CB59D82A23CF1C2E00A8AB87 /* PrivacyViewController.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB0905D623CC9C58006AE4C7 /* NewSkype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0905EB23CC9C5A006AE4C7 /* Build configuration list for PBXNativeTarget "NewSkype" */;
+			buildPhases = (
+				683ABE69C598855CC22E74D4 /* [CP] Check Pods Manifest.lock */,
+				CB0905D323CC9C58006AE4C7 /* Sources */,
+				CB0905D423CC9C58006AE4C7 /* Frameworks */,
+				CB0905D523CC9C58006AE4C7 /* Resources */,
+				B49B8140608D80A3BC237617 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewSkype;
+			productName = NewSkype;
+			productReference = CB0905D723CC9C58006AE4C7 /* NewSkype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB59D83623CF3CE300A8AB87 /* NewSkypeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB59D83E23CF3CE300A8AB87 /* Build configuration list for PBXNativeTarget "NewSkypeUITests" */;
+			buildPhases = (
+				CB59D83323CF3CE300A8AB87 /* Sources */,
+				CB59D83423CF3CE300A8AB87 /* Frameworks */,
+				CB59D83523CF3CE300A8AB87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB59D83D23CF3CE300A8AB87 /* PBXTargetDependency */,
+			);
+			name = NewSkypeUITests;
+			productName = NewSkypeUITests;
+			productReference = CB59D83723CF3CE300A8AB87 /* NewSkypeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB0905CF23CC9C58006AE4C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = STRV;
+				TargetAttributes = {
+					CB0905D623CC9C58006AE4C7 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CB59D83623CF3CE300A8AB87 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CB0905D623CC9C58006AE4C7;
+					};
+				};
+			};
+			buildConfigurationList = CB0905D223CC9C58006AE4C7 /* Build configuration list for PBXProject "NewSkype" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB0905CE23CC9C58006AE4C7;
+			productRefGroup = CB0905D823CC9C58006AE4C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB0905D623CC9C58006AE4C7 /* NewSkype */,
+				CB59D83623CF3CE300A8AB87 /* NewSkypeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB0905D523CC9C58006AE4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB59D82823CF14F300A8AB87 /* ChatViewController.storyboard in Resources */,
+				CB0905E723CC9C5A006AE4C7 /* LaunchScreen.storyboard in Resources */,
+				CB0905E423CC9C5A006AE4C7 /* Assets.xcassets in Resources */,
+				CB59D82D23CF1C3D00A8AB87 /* PrivacyViewController.storyboard in Resources */,
+				CB0905E223CC9C58006AE4C7 /* LoginViewController.storyboard in Resources */,
+				CB91DAFB23E611A3002E6553 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB59D83523CF3CE300A8AB87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		683ABE69C598855CC22E74D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewSkype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49B8140608D80A3BC237617 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewSkype/Pods-NewSkype-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewSkype/Pods-NewSkype-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewSkype/Pods-NewSkype-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB0905D323CC9C58006AE4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0905F623CCB3D4006AE4C7 /* User.swift in Sources */,
+				CB59D83023CF254700A8AB87 /* Constants.swift in Sources */,
+				CB59D82023CF02E100A8AB87 /* ChatDataController.swift in Sources */,
+				CB0905F223CCA830006AE4C7 /* LoginViewController.swift in Sources */,
+				CB0905DB23CC9C58006AE4C7 /* AppDelegate.swift in Sources */,
+				CB0905F823CCB4C1006AE4C7 /* ChatViewController.swift in Sources */,
+				CB0905DD23CC9C58006AE4C7 /* SceneDelegate.swift in Sources */,
+				CB0905FA23CDB916006AE4C7 /* MessageTableViewCell.swift in Sources */,
+				CB59D82B23CF1C2E00A8AB87 /* PrivacyViewController.swift in Sources */,
+				CB59D82523CF0DCF00A8AB87 /* SharedViewController.swift in Sources */,
+				CB0905FC23CDBDFF006AE4C7 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB59D83323CF3CE300A8AB87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB59D83D23CF3CE300A8AB87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0905D623CC9C58006AE4C7 /* NewSkype */;
+			targetProxy = CB59D83C23CF3CE300A8AB87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB0905E023CC9C58006AE4C7 /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0905E123CC9C58006AE4C7 /* Base */,
+			);
+			name = LoginViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		CB0905E523CC9C5A006AE4C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0905E623CC9C5A006AE4C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB0905E923CC9C5A006AE4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB0905EA23CC9C5A006AE4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB0905EC23CC9C5A006AE4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1581C1C83FAD027BA797BCB3 /* Pods-NewSkype.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewSkype/NewSkype.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NewSkype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.newskypetemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB0905ED23CC9C5A006AE4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3787FE9D52E3C72E2E3779 /* Pods-NewSkype.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewSkype/NewSkype.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NewSkype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.newskypetemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB59D83F23CF3CE300A8AB87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N8BW3JW98;
+				INFOPLIST_FILE = NewSkypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = strv.NewSkypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewSkype;
+			};
+			name = Debug;
+		};
+		CB59D84023CF3CE300A8AB87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N8BW3JW98;
+				INFOPLIST_FILE = NewSkypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = strv.NewSkypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewSkype;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB0905D223CC9C58006AE4C7 /* Build configuration list for PBXProject "NewSkype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0905E923CC9C5A006AE4C7 /* Debug */,
+				CB0905EA23CC9C5A006AE4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0905EB23CC9C5A006AE4C7 /* Build configuration list for PBXNativeTarget "NewSkype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0905EC23CC9C5A006AE4C7 /* Debug */,
+				CB0905ED23CC9C5A006AE4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB59D83E23CF3CE300A8AB87 /* Build configuration list for PBXNativeTarget "NewSkypeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB59D83F23CF3CE300A8AB87 /* Debug */,
+				CB59D84023CF3CE300A8AB87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB0905CF23CC9C58006AE4C7 /* Project object */;
+}
